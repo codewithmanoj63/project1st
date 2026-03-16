@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+  <div>
+
+<button onclick="call('add')"> add</button>
+<button onclick="call('multipaly')">multiply</button>
+<button onclick="call('subtract')">subtract</button>
+<button onclick="call('divide')">divide</button>
+</div>
+<h2 id="answer">onclick any button</h2>
+
+
+    <script>
+        
+    prompt("user name and login page")
+        alert( "hello sandeep") 
+      const call = (opt) => {
+        var a = parseInt(prompt('Enter value 1'));
+        var b = parseInt(prompt('Enter value 2'));
+        if (opt == "add") {
+          var ans = a+b
+        } else if(opt == 'Multiply'){
+            console.log(a*b)
+        }else {
+          var ans = name + " Please come here";
+        }
+        document.getElementById("answer").innerHTML = ans;
+      };
+    </script>
+    
+</body>
+</html>

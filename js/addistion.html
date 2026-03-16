@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDITION AND SUBTRACTION</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            border: 2px solid #ccc;
+            width: 70vh;
+            height: 60vh;
+            border-radius: 20px;
+        }
+
+        .addition {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: red;
+            width: 40px;
+            height: 40px;
+            border: none;
+            color: white;
+            font-size: 40px;
+        }
+
+        .subtraction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            width: 40px;
+            height: 40px;
+            border: none;
+            color: white;
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <button class="addition" onclick="subtraction()">-</button>
+            <h2 id="plus">0</h2>
+            <button class="subtraction" onclick="addition()">+</button>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        let a = 0;
+        function addition() {
+            a = a + 1;
+            document.getElementById('plus').innerHTML = a;
+        }
+        function subtraction() {
+            a = a - 1;
+            if (a < 0) {
+                toastr.error("hello manoj");
+            }
+            document.getElementById('plus').innerHTML = a;
+        }
+    </script>
+</body>
+
+</html>
+
+</html>

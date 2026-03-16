@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <h2>Logical Operators</h2>
+    <ul>
+      <li>
+        Used to combine or modify boolean expressions and control program flow
+      </li>
+      <li>
+        Types :
+        <ol>
+          <li>|| (OR)</li>
+          <li>&& (AND)</li>
+          <li>! (NOT)</li>
+        </ol>
+      </li>
+    </ul>
+
+    <h2>|| (OR || या)</h2>
+    <ul>
+      <li>Any one condition true then it will execute the code</li>
+      <li>
+        EXAMPLE :
+        <pre>
+               <code style="background-color: black; color: wheat; display: block;">
+                    if (swi == "on" || swi == "off" || swi == "damage") {
+
+                    if (swi == "on") {
+                         console.log("Bulb On");
+                    }
+
+                    if (swi == "off") {
+                         console.log("Bulb Off");
+                    }
+
+                    if (swi == "damage") {
+                         console.log("Switch Damaged");
+                    }
+
+                    } else {
+                         console.log("Please select on or off only");
+                    }
+               </code>
+          </pre>
+      </li>
+    </ul>
+
+    <h2>&& (AND || और)</h2>
+    <ul>
+      <li>Check for the every codition and all should be true</li>
+      <li>
+        Example :
+        <pre>
+               <code style="background-color: black; color: wheat; display: block;">
+                    if (username == "" || password == "") {
+                         console.log("Username or password can not be empty");
+                    } else if (username == "unscripted_surya" && password == "123456") {
+                         console.log("Welcome to your home page");
+                    } else {
+                         console.log("Username or password is incorrect");
+                    }
+               </code>
+          </pre>
+      </li>
+    </ul>
+    <script>
+      var username = prompt("Enter your username");
+      var password = prompt("Enter your password");
+
+      if (username == "" || password == "") {
+        console.log("Username or password can not be empty");
+      } else if (username == "unscripted_surya" && password == "123456") {
+        // username -> true && password -> true
+        console.log("Welcome to your home page");
+      } else {
+        console.log("Username or password is incorrect");
+      }
+      //  var swi = prompt("Please enter your input");
+
+      //  if (swi == "on") {
+      //    console.log("Bulb On");
+      //  } else if (swi == "off") {
+      //    console.log("Buld Off");
+      //  } else {
+      //    console.log("Please select on or off only");
+      //  }
+
+      //  if (swi == "on" || swi == "off" || swi == "damage") {
+      //    if (swi == "on") {
+      //      console.log("Bulb On");
+      //    }
+
+      //    if (swi == "off") {
+      //      console.log("Bulb Off");
+      //    }
+
+      //    if (swi == "damage") {
+      //      console.log("Switch Damaged");
+      //    }
+      //  } else {
+      //    console.log("Please select on or off only");
+      //  }
+    </script>
+        <script>
+          var masg = prompt( "enter your massage ")
+document.write("manoj kumawat")
+document.getElementById("webdevlaper").innerHTML = masg;
+var masg =prompt(" enter your possword")
+document.write('kanas jii')
+document.getElementById('webdevlaper').innerHTML =masg;
+        </script>
+   
+  </body>
+  
+</html>

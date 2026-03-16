@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login 2 page</title>
+    <style>
+        body{
+            background-color: red;
+            width: 400px;
+             margin: auto;
+             
+        }
+        .l-b{
+           
+            text-align: center;
+        }
+        .l-b button{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="l-b">
+        <h2>
+            login page
+        </h2>
+    
+    <div>
+        <input type="text" id="username" placeholder="enter your email">
+        <input type="password" id="password" placeholder="enter your password">
+    </div>
+    <div>
+<button onclick="oky()">oky</button>
+    </div>
+    </div>
+    <!-- <script>
+        function oky() {
+            var sandy = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            // console.log(sandy)
+            if(sandy =="manoj" && pass =="9999"){
+                console.log("curect password")
+            }else{
+                console.log("wrong password")
+            }
+        }
+    </script> -->
+    <script>
+        function oky(){
+            const manu = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            if(manu == "manoj" && pass == "9887"){
+                alert("show password")
+
+            }else{
+                alert("wrong password")
+            }
+        }
+    </script>
+    
+</body>
+</html>

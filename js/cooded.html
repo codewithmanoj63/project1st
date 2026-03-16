@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="inp" value="This is input">
+    <button onclick="btnClick()" id="btn">Click me</button>
+    <h2 id="display"><span> welcome login page</span></h2>
+    <script>
+        function btnClick() {
+            // var display = document.getElementById('display');
+
+            // var a = display.innerHTML;
+            // console.log(a);
+
+            //  display.innerHTML = 'Sandy'
+
+
+           
+           var a = document.getElementById('display');
+            var inpu = document.getElementById('inp').value;
+            console.log(inpu);
+            a.innerHTML = inpu;   
+
+        }
+
+    </script>
+    
+</body>
+</html>

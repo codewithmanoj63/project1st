@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adistion</title>
+    <style>
+        .section {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contaner {
+            background-color: black;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            border: 2px solid;
+            width: 70vh;
+            height: 60vh;
+            border-radius: 20px;
+        }
+
+        .contaner h2 {
+            color: aliceblue;
+        }
+
+        .multiply {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            background-color: black;
+            color: aliceblue;
+            border: none;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            background-color: black;
+            color: aliceblue;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="contaner">
+            <button class="multiply" onclick="sub()">-</button>
+            <h2 id="stok">0</h2>
+            <button class="head" onclick="multi()">+</button>
+        </div>
+    </section>
+
+    <script>
+        let a = 0
+        function multi() {
+            a = a + 1;
+            document.getElementById("stok").innerHTML = a;
+        }
+        function sub() {
+            a = a - 1;
+           if(a < 0){
+            alert("manoj")
+           } else{
+               document.getElementById("stok").innerHTML = a;
+            
+           }
+
+         
+            
+            
+        }
+
+
+    </script>
+</body>
+
+</html>
